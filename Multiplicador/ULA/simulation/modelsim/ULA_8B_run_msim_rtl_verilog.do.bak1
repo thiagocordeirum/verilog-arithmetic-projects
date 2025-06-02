@@ -1,9 +1,0 @@
-transcript on
-if {[file exists rtl_work]} {
-	vdel -lib rtl_work -all
-}
-vlib rtl_work
-vmap work rtl_work
-
-vlog -vlog01compat -work work +incdir+C:/Users/melot/Desktop/Materias/2025_1_SD2/ULA_Multiplicador_Divisor/ULA {C:/Users/melot/Desktop/Materias/2025_1_SD2/ULA_Multiplicador_Divisor/ULA/ula_8b.v}
-
