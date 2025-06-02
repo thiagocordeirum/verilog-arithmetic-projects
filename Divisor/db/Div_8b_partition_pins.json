@@ -1,0 +1,157 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "quo[0]",
+					"strict" : false
+				},
+				{
+					"name" : "quo[1]",
+					"strict" : false
+				},
+				{
+					"name" : "quo[2]",
+					"strict" : false
+				},
+				{
+					"name" : "quo[3]",
+					"strict" : false
+				},
+				{
+					"name" : "quo[4]",
+					"strict" : false
+				},
+				{
+					"name" : "quo[5]",
+					"strict" : false
+				},
+				{
+					"name" : "quo[6]",
+					"strict" : false
+				},
+				{
+					"name" : "quo[7]",
+					"strict" : false
+				},
+				{
+					"name" : "resto[0]",
+					"strict" : false
+				},
+				{
+					"name" : "resto[1]",
+					"strict" : false
+				},
+				{
+					"name" : "resto[2]",
+					"strict" : false
+				},
+				{
+					"name" : "resto[3]",
+					"strict" : false
+				},
+				{
+					"name" : "resto[4]",
+					"strict" : false
+				},
+				{
+					"name" : "resto[5]",
+					"strict" : false
+				},
+				{
+					"name" : "resto[6]",
+					"strict" : false
+				},
+				{
+					"name" : "resto[7]",
+					"strict" : false
+				},
+				{
+					"name" : "fim",
+					"strict" : false
+				},
+				{
+					"name" : "zero_div",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "div2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "div2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "div2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "div2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "div2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "div2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "div2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "div2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "div1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "div1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "div1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "div1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "div1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "div1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "div1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "div1[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

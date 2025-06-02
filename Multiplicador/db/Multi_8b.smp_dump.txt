@@ -1,0 +1,6 @@
+
+State Machine - |Multi_8b|estado
+Name estado.ESPERA estado.PRONTO estado.OPERACAO 
+estado.ESPERA 0 0 0 
+estado.OPERACAO 1 0 1 
+estado.PRONTO 1 1 0 

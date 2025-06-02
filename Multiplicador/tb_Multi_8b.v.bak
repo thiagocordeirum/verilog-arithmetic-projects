@@ -1,0 +1,88 @@
+module tb_Multi_8b;
+    reg clk;
+    reg reset;
+    reg start;
+    reg [7:0] multiplicando;
+    reg [7:0] multiplicador;
+    wire [15:0] produto;
+    wire pronto;
+    
+    // Instanciação do multiplicador
+    Multiplicador_8bits uut (
+        .clk(clk),
+        .reset(reset),
+        .start(start),
+        .multiplicando(multiplicando),
+        .multiplicador(multiplicador),
+        .produto(produto),
+        .pronto(pronto)
+    );
+    
+    // Geração do clock
+    always #5 clk = ~clk;
+    
+    // Testes
+    initial begin
+        // Inicialização
+        clk = 0;
+        reset = 1;
+        start = 0;
+        multiplicando = 0;
+        multiplicador = 0;
+        
+        // Reset
+        #10 reset = 0;
+        
+        // Teste 1: 5 * 3 = 15
+        #10 multiplicando = 8'd5;
+        multiplicador = 8'd3;
+        start = 1;
+        #10 start = 0;
+        
+        wait(pronto);
+        #10;
+        $display("5 * 3 = %d (esperado: 15)", produto);
+        
+        // Teste 2: 10 * 20 = 200
+        multiplicando = 8'd10;
+        multiplicador = 8'd20;
+        start = 1;
+        #10 start = 0;
+        
+        wait(pronto);
+        #10;
+        $display("10 * 20 = %d (esperado: 200)", produto);
+        
+        // Teste 3: 255 * 1 = 255
+        multiplicando = 8'd255;
+        multiplicador = 8'd1;
+        start = 1;
+        #10 start = 0;
+        
+        wait(pronto);
+        #10;
+        $display("255 * 1 = %d (esperado: 255)", produto);
+        
+        // Teste 4: 127 * 2 = 254
+        multiplicando = 8'd127;
+        multiplicador = 8'd2;
+        start = 1;
+        #10 start = 0;
+        
+        wait(pronto);
+        #10;
+        $display("127 * 2 = %d (esperado: 254)", produto);
+        
+        // Teste 5: 15 * 15 = 225
+        multiplicando = 8'd15;
+        multiplicador = 8'd15;
+        start = 1;
+        #10 start = 0;
+        
+        wait(pronto);
+        #10;
+        $display("15 * 15 = %d (esperado: 225)", produto);
+        
+        $finish;
+    end
+endmodule

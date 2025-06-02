@@ -1,0 +1,53 @@
+# Reading pref.tcl
+# do Multi_8b_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/melot/Desktop/Materias/2025_1_SD2/ULA_Multiplicador_Divisor/Multiplicador {C:/Users/melot/Desktop/Materias/2025_1_SD2/ULA_Multiplicador_Divisor/Multiplicador/Multi_8b.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:58:26 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/melot/Desktop/Materias/2025_1_SD2/ULA_Multiplicador_Divisor/Multiplicador" C:/Users/melot/Desktop/Materias/2025_1_SD2/ULA_Multiplicador_Divisor/Multiplicador/Multi_8b.v 
+# -- Compiling module Multi_8b
+# 
+# Top level modules:
+# 	Multi_8b
+# End time: 10:58:27 on Jun 02,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/melot/Desktop/Materias/2025_1_SD2/ULA_Multiplicador_Divisor/Multiplicador {C:/Users/melot/Desktop/Materias/2025_1_SD2/ULA_Multiplicador_Divisor/Multiplicador/tb_Multi_8b.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:58:27 on Jun 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/melot/Desktop/Materias/2025_1_SD2/ULA_Multiplicador_Divisor/Multiplicador" C:/Users/melot/Desktop/Materias/2025_1_SD2/ULA_Multiplicador_Divisor/Multiplicador/tb_Multi_8b.v 
+# -- Compiling module tb_Multi_8b
+# 
+# Top level modules:
+# 	tb_Multi_8b
+# End time: 10:58:27 on Jun 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_Multi_8b
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_Multi_8b 
+# Start time: 10:58:27 on Jun 02,2025
+# Loading work.tb_Multi_8b
+# Loading work.Multi_8b
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Testes finalizados.
+# ** Note: $stop    : C:/Users/melot/Desktop/Materias/2025_1_SD2/ULA_Multiplicador_Divisor/Multiplicador/tb_Multi_8b.v(93)
+#    Time: 515 ns  Iteration: 0  Instance: /tb_Multi_8b
+# Break in Module tb_Multi_8b at C:/Users/melot/Desktop/Materias/2025_1_SD2/ULA_Multiplicador_Divisor/Multiplicador/tb_Multi_8b.v line 93
+# Unrecognized paper size (Letter), using Custom
+# End time: 11:14:02 on Jun 02,2025, Elapsed time: 0:15:35
+# Errors: 0, Warnings: 0
